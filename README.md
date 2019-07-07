@@ -6,7 +6,7 @@
 <li><code>git clone https://github.com/TheMagizz/DarkVip</code></li>
 <li><code>cd DarkVip</code></li>
 <li><code>pip2 install -r requirements.txt</code></li>
-<li><code>python2 dark.py</code></li>
+<li><code>python2 darkvip.py</code></li>
 </ul>
 <br />
 <br />
