@@ -20,7 +20,7 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
-br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/36.2.2254/119.132; U; id) Presto/2.12.423 Version/12.16')]
+br.addheaders = [('User-Agent', 'Mozilla/5.0 (Linux; Android 8.1.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3384.0 Mobile Safari/537.36')]
 
 #-Keluar-#
 def keluar():
@@ -47,7 +47,7 @@ logo = """\033[1;97m█████████
 \033[1;97m║\033[1;93m* \033[1;97mRecode  \033[1;91m: \033[1;96mThe Magizz \033[1;97m                 ║
 \033[1;97m║\033[1;93m* \033[1;97mGithub  \033[1;91m: \033[1;96mhttps://github.com/TheMagizz\033[1;97m║
 \033[1;97m║\033[1;93m* \033[1;97mFB      \033[1;91m: \033[1;92m\033[4mhttps://fb.me/rizz.magizz\033[0m   \033[1;97m║
-\033[1;97m║\033[1;93m* \033[1;97mVersion \033[1;91m: \033[1;92m\033[4m1.0.0\033[0m                       \033[1;97m║
+\033[1;97m║\033[1;93m* \033[1;97mVersion \033[1;91m: \033[1;92m\033[4m1.1.0\033[0m                       \033[1;97m║
 \033[1;97m╚════════════════════════════════════════╝"""
 
 # titik #
